@@ -5,8 +5,24 @@ import string
 print("\nPASSWORD MANAGER \n")
 
 # Login to password manager first
-user = input("User Name: ")
-user_pw = input("Password: ")
+
+
+system = True
+while system:
+  user_name = input("User Name: ")
+  user_pw = input("Password: ")
+  user = user_name + user_pw
+
+  with open("login.txt") as login_file:
+    login = read.login_file()
+    if user in login:
+      print("Login successfull.\n Hello" + user_name)
+      system = False
+    else: 
+      print("Login failed. Please ask your admin to get registered on the system.")
+  
+
+  
 
 
 # Create text file to store and check credentials
