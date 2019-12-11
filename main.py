@@ -4,6 +4,14 @@ import string
 
 print("\nPASSWORD MANAGER \n")
 
+# Login to password manager first
+user = input("User Name: ")
+user_pw = input("Password: ")
+
+
+# Create text file to store and check credentials
+# Proceed only if logged in
+
 # Ask what the program should do
 print("What would you like to do?")
 print(" 1   Create a new password\n 2   Store login details\n 3   Search for login details\n")
@@ -80,12 +88,6 @@ if task ==3:
       print("No login has been stored!")
   searchfile.close()
 
-
-
-
-
-
-        
 
 
 # Search for a pw
