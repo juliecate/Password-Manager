@@ -5,21 +5,13 @@ import string
 print("\nPASSWORD MANAGER \n")
 
 # Login to password manager first
-class user(object):
+class user:
 
-  def _init_(self, name, password): 
+  def _init_(self, name): 
     self.name = name
-    self.password = password
+    
+  def add_password(self, identifier, user, password):
 
-  def userlogin(self):
-    with open("login.txt") as f:
-      if self.name in f.read():
-        
-
-
-
-user = input("User Name: ")
-user_pw = input("Password: ")
 
 
 # Create text file to store and check credentials
